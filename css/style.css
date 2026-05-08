@@ -8,3 +8,36 @@ body{
     background-color: #f4f4f4;
     color: #333;
 }
+nav{
+    background-color: #494646;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.nav_buttons_container{
+    display: flex;
+    gap: 20px;
+}
+.nav_buttons{
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.nav_buttons:hover{
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transform: translateY(0.5px);
+}
+footer{
+    background-color: #5e5c5c;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
