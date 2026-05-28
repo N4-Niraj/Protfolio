@@ -11,7 +11,7 @@ body{
     
    
     font-family: Arial, sans-serif;
-    background: radial-gradient(circle, #0D1C2D, #051424);
+    background: linear-gradient(135deg, #000000, #0d0d0d);
     color: #b3afaf;
     
 }
@@ -35,7 +35,7 @@ body{
 .social_icons{
     display: flex;
     position: absolute;
-    
+    flex-direction: column;
     right: 25px;
     align-items: center;
     margin-left: 0px;
@@ -56,10 +56,11 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 25px;
+    justify-content: center;
+    padding: 15px 25px 10px 20px;
+    
+    
     color: rgb(255, 255, 255);
-    border: #80dbffa6 solid 1.5px;
     border-radius: 30px 30px 30px 30px;
     max-width: 720px;
     margin:  auto;
@@ -67,7 +68,7 @@ nav{
     font-size: 18px;
     position: sticky;
     top: 0;
-    background: radial-gradient(circle, #0D1C2D, #051424);
+    
 }
 .nav_right {
     
@@ -76,28 +77,34 @@ nav{
     gap: 15px;
 }
 .nav_buttons_container{
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 100px;
     
     
-}
-.contact {
-    color: #ecf5ff;
-    font-size: 15px;
-    font-weight: small;
-}
-.contact button{
-    background-color: #051424;
-    color: #ffffff;
-    padding: 8px 15px;
-    border: 1px solid #ecf5ff94;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: bold;
 }
 
+.nav_button{
+    background-color: transparent;
+    border: none;
+    color: #ecf5ff;
+    padding: 8px 15px;
+    
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.nav_button:hover{
+    background-color: hsla(0, 0%, 100%, 0.104);
+    border: 0.5px solid #ecf5ff;
+    border-radius: 48px;
+    color:#ffffff;
+    cursor: pointer;
+    
+}
 .main_nav_text a{
     font-size: 24px;
     font-weight: bold;
@@ -109,21 +116,7 @@ nav{
 .main_nav_text a:hover{
     text-shadow: 0 0 25px #3c84f185;
 }
-.nav_buttons{
-    background-color: #ecf5ff;
-    color: #000000;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: bold;
 
-}
-.nav_buttons:hover{
-    color:#1e59b18f;
-    cursor: pointer;
-    transform: translateY(0.5px);
-}
 
 
 #home{  
@@ -171,7 +164,7 @@ nav{
     
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
     justify-content: center;
     gap: 20px;
@@ -258,14 +251,14 @@ nav{
 .project_card {
     padding: 20px;
     border-radius: 16px;
-    border: 1px solid var(--border);
+    border: 1px solid rgba(60, 133, 241, 0.2);
     background: rgba(255,255,255,0.02);
     transition: 0.3s ease;
 }
 
 .project_card:hover {
     transform: translateY(-5px);
-    border-color: var(--accent);
+    border-color: rgba(60, 133, 241, 0.2);
     box-shadow: 0 10px 40px rgba(60, 133, 241, 0.15);
 }
 
