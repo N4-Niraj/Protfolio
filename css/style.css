@@ -22,17 +22,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
+    
     margin: 0 auto;
-    padding: 0 20px;
+    background: rgba(80, 63, 63, 0.696);
 }
 #quick_info {
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 20px 20px;
-    text-align: center;
+    gap: 15px;
+    
+    
 }
 
 
@@ -67,7 +68,7 @@ body {
 }
 .social_links a:hover {
     
-    transform: translateY(-3px);
+    transform: translateY(-1px);
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
@@ -161,7 +162,16 @@ nav.scrolled {
     font-weight: light;
     margin-top: 15px;
 }
-
+.location_button {
+    background-color: transparent;
+    border: 0.5px solid transparent;
+    color: #b3afaf;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
 .introo {
     align-items: center;
     text-align: center;
@@ -180,21 +190,22 @@ nav.scrolled {
 }
 
 .status {
-    background-color: rgba(0, 56, 56, 0.377);
-    border: #012d3f solid 1.5px;
+    background-color: rgba(2, 7, 7, 0.696);
+    font-size: 8px;
+    border: #fdffffac solid 1.5px;
     padding: 15px 30px 15px 30px;
     border-radius: 80px;
 }
 
 .status p {
     color: #ecf5ff;
-    font-size: 18px;
+    font-size: 10px;
 }
 
 .status:hover {
     transition: all 0.4s ease;
-    background-color: rgba(0, 56, 56, 0.577);
-    border-color: #012d3f;
+    background-color: rgba(251, 255, 255, 0.377);
+    border-color: #f7f9fa;
 }
 
 .about_section {
@@ -214,21 +225,48 @@ nav.scrolled {
     font-weight: bold;
     padding-top: 1px;
 }
-
+.profile_image_container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
 .profile_image {
     border: #002331 solid 2px;
     background-color: #ecf5ff;
     width: 180px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    transition: all 0.4s ease;
 }
+
 
 .profile_image:hover {
-    transition: all 0.4s ease;
-    border-color: #3672ccaf;
-    box-shadow: 0 0 75px #3c85f1af;
+    border-color: #9298a1af;
+    box-shadow: 0 0 75px #8490a2af;
+}
+.status_badge {
+    position: absolute;
+    bottom: 6px;
+    right: -20px;
+    background-color: hsla(180, 60%, 2%, 0.946);
+    border: #fdffffac solid 1.5px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    color: #ecf5ff;
+    font-size: 10px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(118, 131, 126, 0.436);
+    transition: all 0.3s ease;
+    cursor: default;
 }
 
+
+.badge_dot {
+    font-size: 6px;
+}
 .intro_section {
     display: flex;
     flex-direction: column;
