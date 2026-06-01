@@ -344,7 +344,6 @@ nav.scrolled {
     border: 1px solid rgba(60, 133, 241, 0.2);
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.02);
-
 }
 
 #projects h3,
@@ -355,34 +354,111 @@ nav.scrolled {
     padding-bottom: 20px;
 }
 
+#projects > p {
+    color: #b3afaf;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
 .projects_grid {
     padding-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .project_card {
-    padding: 20px;
     border-radius: 16px;
     border: 1px solid rgba(60, 133, 241, 0.2);
     background: rgba(255, 255, 255, 0.02);
-    transition: 0.3s ease;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .project_card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(60, 133, 241, 0.2);
-    box-shadow: 0 10px 40px rgba(60, 133, 241, 0.15);
+    transform: translateY(-8px);
+    border-color: rgba(0, 208, 132, 0.4);
+    box-shadow: 0 15px 50px rgba(60, 133, 241, 0.2);
 }
 
-.skills_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 15px;
-
+.project_image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
+.project_card:hover .project_image {
+    filter: brightness(1.1);
+}
+
+.project_content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project_card h4 {
+    color: #ecf5ff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project_card p {
+    color: #b3afaf;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.project_buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 208, 132, 0.3);
+}
+
+.btn-github {
+    color: #00d084;
+    background-color: rgba(0, 208, 132, 0.1);
+}
+
+.btn-github:hover {
+    background-color: rgba(0, 208, 132, 0.2);
+    border-color: #00d084;
+    box-shadow: 0 0 15px rgba(0, 208, 132, 0.3);
+}
+
+.btn-live {
+    color: #3c85f1;
+    background-color: rgba(60, 133, 241, 0.1);
+    border-color: rgba(60, 133, 241, 0.3);
+}
+
+.btn-live:hover {
+    background-color: rgba(60, 133, 241, 0.2);
+    border-color: #3c85f1;
+    box-shadow: 0 0 15px rgba(60, 133, 241, 0.3);
+}
 
 
 footer {
