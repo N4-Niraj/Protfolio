@@ -456,24 +456,80 @@ nav.scrolled {
 
 .btn-live:hover {
     background-color: rgba(60, 133, 241, 0.2);
-    border-color: #3c85f1;
+    border-color: #ffffff75;
     box-shadow: 0 0 15px rgba(60, 133, 241, 0.3);
 }
-#contactSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 100px 20px 100px 20px;
-    
-    gap: 20px;
-    width: 800px;
-    margin-top: 20px;
-    margin: 0 auto;
-    
+#guestBook{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:60px;
+    padding:100px 20px;
+    max-width:1000px;
+    margin:0 auto;
 }
 
+.guestbook-text{
+    max-width:380px;
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    justify-content:center;
+    text-align:left;
+}
+
+#guestBook h4{
+    font-size:28px;
+    color:#ecf5ff;
+    margin-bottom:12px;
+}
+
+.guestbook-text p{
+    color:#bfc8d2;
+    line-height:1.6;
+}
+.guestbook-form{
+    width:380px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    padding:20px;
+    border:1px solid rgba(255, 255, 255, 0.158);
+    border-radius:12px;
+    background:rgba(0, 0, 0, 0.164);
+}
+.guestbook-form input,
+.guestbook-form textarea{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid rgba(255, 255, 255, 0.139);
+    border-radius:8px;
+    background:transparent;
+    color:#ffffffc2;
+    resize:none; 
+}
+
+.guestbook-form textarea{
+    height:120px;   
+}
+
+.guestbook-form button{
+    align-self:center   ;
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    background:#00000071;
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+}
+.guestbook-form button:hover{
+    
+
+    background:#00000039;
+    color:rgb(255, 255, 255);
+
+    
+}
 footer {
 
     color: #f4f4f4;
@@ -481,7 +537,7 @@ footer {
     padding: 20px 0;
     width: 100%;
     bottom: 0;
-    border-top: #7bbbff solid 1px;
+    border-top: #ffffff7f solid 0.5px;
 }
 
 .main_nav_text {
