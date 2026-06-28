@@ -249,24 +249,24 @@ nav.scrolled {
     width: 180px;
     border-radius: 50%;
     transition: all 0.4s ease;
+      user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
 }
 
 
-.profile_image:hover {
-    border-color: #9298a1af;
-    box-shadow: 0 0 25px #8490a2af;
-}
+
 .status_badge {
     position: absolute;
     bottom: 6px;
     right: -18px;
-    background-color: rgba(255, 255, 255, 0.125);
+    background-color: rgba(255, 255, 255, 0.806);
     border: var(--border-color) solid 1px;
     padding: 9px 16px;
     border-radius: 50px;
-    color: var(--heading-color);
+    color: black;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 800;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -278,7 +278,7 @@ nav.scrolled {
 
 
 .badge_dot {
-    font-size: 6px;
+    font-size: 8px;
 }
 .intro_section {
     display: flex;
