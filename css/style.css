@@ -458,6 +458,69 @@ nav.scrolled {
     border-color: var(--border-color-hover);
     box-shadow: 0 0 15px var(--card-hover-bg);
 }
+.skills_buttons{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+}
+
+.skill_button{
+    background-color: var(--button-bg);
+    border: var(--border-color) solid 1px;
+    color: #ecf5ff;
+    border-radius: 48px;
+    margin-top: 22px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+.skill_learning:hover {
+    background-color: rgba(242, 255, 0, 0.411);
+    border: 0.5px solid #ecf5ff;
+    border-radius: 48px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.familiar:hover {
+    background-color: rgba(0, 255, 0, 0.187);
+    border: 0.5px solid #ecf5ff;
+    border-radius: 48px;
+    color: #ffffff;
+    cursor: pointer;
+}
+#skills{
+    position:relative;
+
+}
+.skillIndicator{
+    background-color: var(--button-bg);
+    padding:6px 12px;
+    border: var(--border-color) solid 1px;
+    border-radius: 48px;
+    position:absolute;
+    right:30px;
+    bottom:20px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    font-size: 10px;
+}
+.indicator{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    display:inline-block;
+    
+}
+
+.familiar-dot{
+    background:#39ff2e;
+}
+
+.learning-dot{
+    background:#ffc400;
+}
 #guestBook{
     display:flex;
     align-items:center;
